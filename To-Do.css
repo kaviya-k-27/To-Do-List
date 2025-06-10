@@ -109,60 +109,15 @@ input::placeholder{
     margin:auto;
 }
 @media (max-width: 780px) {
-    body {
-        background-color: rgb(90, 90, 255);
-        padding: 10px;
-    }
 
-    .wrapperbox {
-        flex-direction: column;
-        margin-top: 20px;
+    .field{
+        width:70%;
     }
-
-    .mainbox {
-        width: 95%;
-        padding: 15px;
-        height: auto;
-        margin-bottom: 80px;
-        border-width: 2px;
-    }
-
-    .inbox {
-        flex-direction: column;
-        align-items: stretch;
-        width: 100%;
-        margin-left: 0;
-        margin-top: 15px;
-    }
-
-    .field {
-        width: 100%;
-        max-width: 100%;
-        font-size: 16px;
-        padding: 10px 15px;
-        margin-bottom: 10px;
-        box-sizing: border-box;
-    }
-
-    .add {
-        width: 100%;
-        padding: 12px;
-        font-size: 16px;
-    }
-
-    .my-data {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .mindiv1,
-    .mindiv2 {
-        width: 100%;
-        text-align: center;
-    }
-
-    .image1 {
-        height: 50px;
-        width: 50px;
+    .inbox{
+    margin-top:20px;
+    width:255px;
+    margin-left:5px;
+    border-radius: 20px;
+    background:linear-gradient(rgb(224, 224, 224));
     }
 }
