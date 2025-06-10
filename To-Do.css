@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+      
+}
+body{
+    background-color:rgb(90, 90, 255); 
+}
+.wrapperbox{
+     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+    
+}
+.image1{
+ border-radius: 10px;
+ height:60px;
+ width:60px;
+}
+.mainbox{
+    /* height:auto; */
+    border:4px solid white;
+    border-radius: 10px;
+    width:50%;
+    padding:20px;
+    background-color:white;
+    /* margin-bottom: 10px; */
+}
+ .inbox{
+    margin-top:20px;
+    width:355px;
+    margin-left:140px;
+    border-radius: 20px;
+    background:linear-gradient(rgb(224, 224, 224));
+    display: flex;
+    align-items: center;
+ }
+ #tc{
+    background-color: white;
+    padding:20px;
+     width:50%;
+ }
+ .field{
+      line-height: 20px; /* or 40px to vertically center text */
+    width:300px;
+      height:45px;
+
+    border-radius:20px;
+    border:none;
+    background:linear-gradient(rgb(224, 224, 224));
+    /* flex:1; */
+    outline: none;
+    font-weight: bold;
+    font-size:18px;
+    padding: 0 15px;
+    /* flex-wrap: wrap; */
+ }
+.add{
+    padding:13px;
+    width:85px;
+    height:48px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: red;
+    border:none;
+    outline:none;
+    color:white;
+}
+input::placeholder{
+    padding:20px;
+}
+.add:hover{
+    background-color: green;
+    box-shadow: 2px 3px 5px;
+    color:white;
+}
+.my-data button{
+    color:white;
+    background-color: red;
+    padding:10px;
+    border:none;
+    height:auto;
+    border-radius: 15px;
+    box-shadow: 2px 3px 5px rgba(255, 109, 109,0.5);
+}
+.my-data{
+    height:auto;
+    width:auto;
+    margin:15px;
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    margin-top: 25px;;
+}
+.mindiv1{
+    width:75%;
+    background-color: rgb(244, 253, 114);
+    text-align:start;
+    word-wrap: break-word;
+       border-radius: 10px;
+       padding:10px;
+}
+.mindiv2{
+    width:25%;
+    margin:auto;
+}
+/* For small screens like mobiles */
+@media (max-width: 768px) {
+    .mainbox {
+        width: 80%;
+        height: auto;
+        margin-bottom: 150px;
+    }
+
+    .inbox {
+        width: 90%;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .field {
+        min-width: 200px;
+        font-size: 16px;
+    }
+
+    .add {
+        width: 70px;
+        padding: 10px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .mainbox {
+        width: 95%;
+        padding: 15px;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .inbox {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .field {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .add {
+        width: 100%;
+    }
+
+    .image1 {
+        height: 50px;
+        width: 50px;
+    }
+}
